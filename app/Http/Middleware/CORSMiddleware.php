@@ -14,7 +14,7 @@ class CORSMiddleware{
 	 * @param  \Closure  $next
 	 * @return mixed
 	 */
-	private $acceptableDomains = ['isocietymanager.com','jaypeehelpdesk.com'];
+	private $acceptableDomains = ['bookstore.com'];
 	public function handle($request, Closure $next){
 		$origin=array_key_exists('HTTP_ORIGIN', $_SERVER) ? $_SERVER['HTTP_ORIGIN'] :'';
 		$response = $next($request);
